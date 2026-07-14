@@ -95,6 +95,7 @@ RUN wget -q "https://github.com/mozilla/geckodriver/releases/download/${GECKODRI
 # Use gemset created by the builder above
 COPY --chown=beef:beef . /beef
 COPY --from=builder /usr/local/bundle /usr/local/bundle
+RUN find /beef -maxdepth 1 -type f \( -name 'beef' -o -name 'install' -o -name 'update-beef' \) -exec sed -i 's/\r$//' {} +
 
 # Ensure we are using our service account by default
 USER beef

@@ -17,8 +17,8 @@ beef:
     # Credentials to authenticate in BeEF.
     # Used by both the RESTful API and the Admin interface
     credentials:
-        user:   "beef"
-        passwd: "beef"
+        user:   "james"
+        passwd: "8y0tckYQE5BCjNO7PpwMq42S"
 
     # Interface / IP restrictions
     restrictions:
@@ -93,7 +93,7 @@ beef:
             hook_root: false # inject BeEF hook in the server home page
         # Experimental HTTPS support for the hook / admin / all other Thin managed web services
         https:
-            enable: false
+            enable: true
             # In production environments, be sure to use a valid certificate signed for the value
             # used in beef.http.public (the domain name of the server where you run BeEF)
             key: "beef_key.pem"

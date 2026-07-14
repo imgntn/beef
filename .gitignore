@@ -129,6 +129,8 @@ $RECYCLE.BIN/
 
 test/thirdparty/msf/unit/.byebug_history
 /load
+beef_cert.pem
+beef_key.pem
 
 ### JSDoc ###
 # Dependency directories
